@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnJogadores"
+                android:text="@string/btn_jogadores"
+                android:onClick="listarJogadores"
+                style="@style/btnHome"/>
+
+            <Button
+                android:id="@+id/btnEscalados"
+                android:text="@string/btn_escalados"
+                android:onClick="listarEscalados"
+                style="@style/btnHome"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnJogar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bola"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/txt_jogar" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnHorario"
+                android:text="@string/btn_horario"
+                android:onClick="login"
+                style="@style/btnHome"/>
+
+            <Button
+                android:id="@+id/btnCaixa"
+                android:text="@string/tbn_caixa"
+                style="@style/btnHome"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEventos"
+                android:text="@string/btn_eventos"
+                style="@style/btnHome"/>
+
+            <Button
+                android:id="@+id/btnEquipamentos"
+                android:text="@string/btn_equipamentos"
+                style="@style/btnHome"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:onClick="logOutFace"/>
+</LinearLayout>

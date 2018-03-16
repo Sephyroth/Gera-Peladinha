@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContentJogadores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.garcia.silva.leonardo.gerapeladinha.JogadoresActivity"
+    tools:showIn="@layout/activity_jogadores">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="@string/txt_nome"
+                style="@style/txtCabecalho"/>
+
+            <TextView
+                android:id="@+id/txtPosicao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:text="@string/txt_posicao"
+                style="@style/txtCabecalho"/>
+
+            <TextView
+                android:id="@+id/txtTipo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="@string/txt_tipo"
+                style="@style/txtCabecalho"/>
+
+            <TextView
+                android:id="@+id/txtTelefone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/txt_telefone"
+                style="@style/txtCabecalho"/>
+        </TableRow>
+    </TableLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstDados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

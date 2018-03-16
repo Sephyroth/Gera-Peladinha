@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="br.com.garcia.silva.leonardo.gerapeladinha.DadosBasicosActivity">
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imgUsuario"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="false"
+        android:onClick="dialogo"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:contentDescription="@string/descri_foto_do_jogador"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        tools:ignore="LabelFor" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="0,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edtDataNasc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="date"
+                android:layout_weight=".50"
+                android:hint="@string/hint_data_nascimento"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/edtTelefone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight=".50"
+                android:inputType="phone"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/txt_pagamento"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/txt_situacao"/>
+        </TableRow>
+
+        <TableRow>
+            <ToggleButton
+                android:id="@+id/tgbPagamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:checked="true"
+                android:textOff="@string/tgb_pendente"
+                android:textOn="@string/tgb_em_dia"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <ToggleButton
+                android:id="@+id/tgbSituacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:checked="true"
+                android:textOff="@string/tgb_inativo"
+                android:textOn="@string/tgb_ativo"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_posicao"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/txt_tipo"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spnPosicao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:id="@+id/spnTipo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+    </TableLayout>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Salvar"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:onClick="confirmar"-->
+        <!--android:focusable="true"/>-->
+</LinearLayout>

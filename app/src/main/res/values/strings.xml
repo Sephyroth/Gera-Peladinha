@@ -1,0 +1,113 @@
+<resources>
+    <!-- TODO:  -->
+    <string name="app_name">Peladinha</string>
+    <string name="btn_jogadores">Jogadores</string>
+    <string name="btn_escalados">Escalados</string>
+    <string name="btn_jogar">Jogar</string>
+    <string name="btn_horario">Horário</string>
+    <string name="tbn_caixa">Caixa</string>
+    <string name="btn_eventos">Eventos</string>
+    <string name="btn_equipamentos">Equipamentos</string>
+    <string name="title_activity_jogadores">Jogadores</string>
+    <string name="title_activity_main_jogadores">Jogadores</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_telefone">Fone</string>
+    <string name="txt_tipo">Tipo</string>
+    <string name="txt_posicao">Posição</string>
+    <string name="radbtn_mensal">Mensalista</string>
+    <string name="radbtn_avulso">Avulso</string>
+    <string name="menu_cancelar">Cancelar</string>
+    <string name="menu_salvar">Salvar</string>
+    <string name="title_activity_jogador">Jogador</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="posicao_array">
+        <item>GOL</item>
+        <item>ZAG</item>
+        <item>LD</item>
+        <item>LE</item>
+        <item>VOL</item>
+        <item>MD</item>
+        <item>ME</item>
+        <item>MC</item>
+        <item>SA</item>
+        <item>PD</item>
+        <item>PE</item>
+        <item>ATA</item>
+        <item>LB</item>
+    </string-array>
+
+    <string-array name="tipo_array">
+        <item>Mensal</item>
+        <item>Avulso</item>
+    </string-array>
+
+    <array name="dialogo_camera">
+        <item>Galeria</item>
+        <item>Câmera</item>
+        <item>Remover foto</item>
+    </array>
+
+    <string name="title_activity_dados_basicos">Dados Basicos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txt_data_nasc">Data Nasc.</string>
+
+    <!-- TODO: -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_bola_cheia">Bola Cheia</string>
+    <string name="txt_bola_murcha">Bola Murcha</string>
+    <string name="txt_canetinha">Canetinha</string>
+    <string name="txt_cartao_amarelo">Cartão Amarelo</string>
+    <string name="txt_cartao_vermelho">Cartão Vermelho</string>
+    <string name="txt_chapeu">Chapéu</string>
+    <string name="txt_defesa_penalti">Def. Pênalti</string>
+    <string name="txt_gol">Gol</string>
+    <string name="txt_passe">Passe</string>
+    <string name="txt_pontuacao">Pontuação na última rodada</string>
+    <string name="txt_estatisticas">Estatisticas</string>
+    <string name="descri_foto_do_jogador">Foto do jogador</string>
+    <string name="hint_data_nascimento">Data Nasc.</string>
+    <string name="txt_pagamento">Pagamento</string>
+    <string name="txt_situacao">Situacao</string>
+    <string name="tgb_pendente">Pendente</string>
+    <string name="tgb_em_dia">Em Dia</string>
+    <string name="tgb_inativo">Inativo</string>
+    <string name="tgb_ativo">Ativo</string>
+    <string name="descri_camera">Imagem de câmera</string>
+    <string name="txt_camera">Câmera</string>
+    <string name="descri_galeria">Imagem de galeria</string>
+    <string name="txt_galeria">Galeria</string>
+    <string name="descri_delete">Imagem de lixeira</string>
+    <string name="txt_remover_foto">Remover Foto</string>
+    <string name="title_activity_times">Times</string>
+    <string name="txt_escudo">Escudo</string>
+    <string name="txt_nome_time">Nome do Time</string>
+    <string name="txt_escudo_do_time">Escudo do time</string>
+    <string name="txt_jogar">Jogar</string>
+    <string name="title_activity_time">Time</string>
+    <string name="desc_image_para_escudo">Imagem para o escudo do time</string>
+    <string name="alert_atecao">Atenção</string>
+    <string name="alert_message_preencha_campos">Preencha todos os campos para cadastrar um jogador</string>
+    <string name="alert_ok">Ok</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_tela_login">Login or Resgister</string>
+
+    <string name="facebook_app_id">150377155778123</string>
+    <string name="fb_login_protocol_scheme">fb164033321066288</string>
+
+</resources>

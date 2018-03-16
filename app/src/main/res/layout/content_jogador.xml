@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContentJogador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.garcia.silva.leonardo.gerapeladinha.JogadorActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_jogador">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:labelFor="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtNome"
+        app:layout_constraintStart_toStartOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_telefone"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:labelFor="@id/txtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/txtTelefone"
+        app:layout_constraintStart_toStartOf="@+id/txtTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefone" />
+
+    <TextView
+        android:id="@+id/txtPosicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_posicao"
+        app:layout_constraintEnd_toEndOf="@+id/edtTelefone"
+        app:layout_constraintStart_toStartOf="@+id/edtTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/edtTelefone" />
+
+    <Spinner
+        android:id="@+id/spnPosicao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/txtPosicao"
+        app:layout_constraintStart_toStartOf="@+id/txtPosicao"
+        app:layout_constraintTop_toBottomOf="@+id/txtPosicao" />
+
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_tipo"
+        app:layout_constraintEnd_toEndOf="@+id/spnPosicao"
+        app:layout_constraintStart_toStartOf="@+id/spnPosicao"
+        app:layout_constraintTop_toBottomOf="@+id/spnPosicao" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtTipo"
+        app:layout_constraintStart_toStartOf="@+id/txtTipo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipo">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radbtnMensal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radbtn_mensal" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radbtnAvulso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/radbtn_avulso" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

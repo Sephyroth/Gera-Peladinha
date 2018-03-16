@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.garcia.silva.leonardo.gerapeladinha">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACTION_PIC" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- face permission-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".GeraPeladinhaAPP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bola"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <activity android:name=".InicioActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JogadoresActivity"
+            android:label="@string/title_activity_jogadores"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_jogadores"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JogadorActivity"
+            android:label="@string/title_activity_jogador"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DadosBasicosActivity"
+            android:label="@string/title_activity_dados_basicos" />
+        <activity
+            android:name=".TimesActivity"
+            android:label="@string/title_activity_times"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimeActivity"
+            android:label="@string/title_activity_time"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".TelaLoginActivity"
+            android:label="@string/title_activity_tela_login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
